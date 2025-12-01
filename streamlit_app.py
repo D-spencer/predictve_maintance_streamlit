@@ -32,7 +32,7 @@ with st.sidebar:
   Process_Temperature = st.slider('process_temperatuew',308.0, 313.8, 310.76)
   
   data = {'MachineType': MachineType,
-          'Torque': Torque,
+          'torque_[nm]': Torque,
           'Rotational_speed': rotational_speed,
           'Tool_wear': tool_wear,
           'Air_temperature': Air_Temperature,
