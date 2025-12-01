@@ -26,8 +26,6 @@ with st.sidebar:
   st.header('Input Features')
   MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
   Torque =  st.slider('torque_[nm]',3.8 , 42.8, 18.4)
-  air_temperature =  st.slider('air_temperature', 298.1, 304.5, 300)
-  process_temperature =  st.slider('process_temp', 305.7, 313.8, 309)
   rotational_speed =  st.slider('rotational_speed_[rpm]',1168, 2886, 2000)
   tool_wear =  st.slider('tool_wear_[min]',0, 253, 115)
   
