@@ -22,3 +22,5 @@ with st.expander('Data'):
 with st.expander('Data Visulization'):
   st.bar_chart(df['target'].value_counts()  , x_label='Distribution of Target column')
 
+with st.sidebars:
+  st.header('Input Features')
