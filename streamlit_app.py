@@ -6,7 +6,8 @@ import numpy as np
 st.title('🤖 Predictive Maintenance APP')
 
 st.info('This is a machine Learning App')
-
+df = pd.read_csv("Predictive_Maintance_Project/data/preprocessed_predictive_maintenance.csv")
+df 
 
 
 
