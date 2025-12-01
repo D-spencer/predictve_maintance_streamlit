@@ -11,5 +11,12 @@ with st.expander('Data'):
   df = pd.read_csv("https://raw.githubusercontent.com/D-spencer/Predictive_Maintenance_ML_Project/refs/heads/main/Predictive_Maintance_Project/data/preprocessed_predictive_maintenance.csv")
   df
 
+  st.write('***X***')
+  X_raw = df.drop('target' , axis =1)
+  X_raw
+
+  st.write('***y***')
+  y_raw =  df.target
+  y_raw 
 
 
