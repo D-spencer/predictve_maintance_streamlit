@@ -20,5 +20,5 @@ with st.expander('Data'):
   y_raw 
 
 with st.expander('Data Visulization'):
-  st.bar_chart(data=df , x='target'.value_counts()  , x_label='Distribution of Target column')
+  st.bar_chart(df['target'].value_counts()  , x_label='Distribution of Target column')
 
