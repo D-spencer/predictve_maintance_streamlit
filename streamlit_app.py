@@ -30,7 +30,7 @@ with st.sidebar:
   tool_wear =  st.slider('tool_wear_[min]',0, 253, 124)
   Air_Temperature =  st.slider('air_temp',295.3, 304.2, 299.71)
   Process_Temperature = st.slider('process_temperatuew',308.0, 313.8, 310.76)
-
+  
   data = {'MachineType': MachineType,
           'Torque': Torque,
           'Rotational_speed': rotational_speed,
@@ -39,6 +39,8 @@ with st.sidebar:
           'Process_Temperature': Process_Temperature}
   input_df = pd.DataFrame(data, index=[0])
   input_pred = pd.concat([input_df, X_raw], axis=0)
+
+input_df
 
 
 
