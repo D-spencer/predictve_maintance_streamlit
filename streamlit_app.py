@@ -4,4 +4,4 @@ st.title('🤖 Predictive Maintenance APP')
 
 st.info('This is a machine Learning App')
 
-df= pd.read.csv('
+df= pd.read.csv('')
