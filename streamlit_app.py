@@ -19,4 +19,6 @@ with st.expander('Data'):
   y_raw =  df.target
   y_raw 
 
+with st.expander('Data Visulization'):
+  st.bar_chart(data=df , x='target'  , x_label='Distribution of Target column')
 
