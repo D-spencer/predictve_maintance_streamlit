@@ -25,5 +25,5 @@ with st.expander('Data Visulization'):
 with st.sidebar:
   st.header('Input Features')
   MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
-  # Torque =  st.slider('
+  # Torque =  st.slider('torque_[nm]',3.8 , 42.8, 18.4)
                                      
