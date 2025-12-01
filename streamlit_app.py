@@ -28,8 +28,8 @@ with st.sidebar:
   Torque =  st.slider('torque_[nm]',3.8 , 42.8, 18.4)
   rotational_speed =  st.slider('rotational_speed_[rpm]',1168, 2886, 2000)
   tool_wear =  st.slider('tool_wear_[min]',0, 253, 115)
-  Air_Temperature =  st.slider('air_temp',295.3, 304.2, 300)
-  Process_Temperature = st.slider('process_temperatuew',308, 313.8, 310)
+  Air_Temperature =  st.slider('air_temp',295.3, 304.2, 300.0)
+  Process_Temperature = st.slider('process_temperatuew',308.0, 313.8, 310.0)
 
 
   
