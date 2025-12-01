@@ -24,5 +24,6 @@ with st.expander('Data Visulization'):
 
 with st.sidebar:
   st.header('Input Features')
-  features  = st.selectbox('type' , ('L','M',H'))
+  MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
+  
                                      
