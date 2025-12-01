@@ -24,5 +24,5 @@ with st.expander('Data Visulization'):
 
 with st.sidebar:
   st.header('Input Features')
-  features  = st.selectbox('type' , ('L','M',H')
+  features  = st.selectbox('type' , ('L','M',H'))
                                      
