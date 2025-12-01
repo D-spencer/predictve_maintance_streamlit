@@ -38,7 +38,7 @@ with st.sidebar:
           'Air_temperature': Air_Temperature,
           'Process_Temperature': Process_Temperature}
   input_df = pd.DataFrame(data, index=[0])
-  input_pred = pd.concat([input_df, X_raw], axis=0)
+  # input_pred = pd.concat([input_df, X_raw], axis=0)
 
 input_df
 
