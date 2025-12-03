@@ -56,7 +56,8 @@ def load_model():
   return joblib.load('predictive_maintance.Pk1')
 
 model = load_model()
-st.success(f"The Predicted result is :  {model.predict(input_df)[0]}")
+model_pred = model.predict(input_df)[0]
+st.success(f"The Predicted result is :  {model_pred}")
 
 proba = model.predict_proba(input_df)
 failure_prob = float(proba[0][1])
