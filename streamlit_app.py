@@ -30,7 +30,7 @@ with st.sidebar:
     st.header('Input Features')
     MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
     Air_Temperature =  st.number_input('air_temp',295.3, 304.2)
-    Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8)
+    Process_Temperature = st.number_input('process_temperature',308.0, 313.8)
     rotational_speed =  st.number_input('rotational_speed_[rpm]',1168, 2886)
     Torque =  st.number_input('torque_[nm]',3.8 , 76.6)
     tool_wear =  st.number_input('tool_wear_[min]',0, 253)
