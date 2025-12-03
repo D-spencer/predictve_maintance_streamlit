@@ -47,7 +47,9 @@ with st.expander('Input features'):
   input_pred
 
 model = joblib.load('predictive_maintance.Pk1')
-st.success(f"The Predicted result is : {model.predict(input_df)}")
+st.success(f"The Predicted result is : {model.predict(input_df)[0]}")
+
+st.metric(label = 'Prediction' ,  value =model.predict(input_df)[0])
 
 
   
