@@ -46,7 +46,7 @@ with st.expander('Input features'):
   st.write('**Combined penguins data**')
   input_pred
 
-model = joblib.load('https://raw.githubusercontent.com/D-spencer/Predictive_Maintenance_ML_Project/refs/heads/main/Predictive_Maintance_Project/models/predictive_maintance.Pk1')
+model = joblib.load('predictive_maintance.Pk1')
 st.write(model.predict(input_df))
 
 
