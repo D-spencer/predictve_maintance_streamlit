@@ -56,7 +56,20 @@ df_prediction_proba.rename(columns={0: 'Probability of no failure' ,
                                     1: 'Probability of failure'} ,
                            inplace =True)
 st.dataframe(df_prediction_proba)
+failure_prob = float(proba[0][1])
+no_failure_prob = float(proba[0][0])
 
+col1, col2 = st.columns(2)
+with col1: 
+  st.metric('No failure" ,  f"{no_failure_prob:.2%}")
+  st.progress(no_failure_proba)
+
+with col2: 
+  st.metric('failure" ,  f"{failure_prob:.2%}")
+  st.progress(failure_proba)
+
+
+             
 
   
                                      
