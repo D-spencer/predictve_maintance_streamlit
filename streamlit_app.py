@@ -47,7 +47,10 @@ with st.expander('Input features'):
   input_pred
 
 model = joblib.load('predictive_maintance.Pk1')
-st.success(f"The Predicted result is : {st.metric(value =model.predict(input_df)[0])}")
+st.success(f"The Predicted result is :  {model.predict(input_df)[0])}")
+
+proba = model.predict_proba(input_df)[0][1]
+st.info(f"Probability of failure: {proba:.2f}")
 
 
 
