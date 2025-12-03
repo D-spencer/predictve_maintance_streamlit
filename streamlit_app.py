@@ -63,7 +63,7 @@ def fail(pred):
   else : 
     return 'This Machine is Okay'
 msg = fail(model_pred)
-st.success(f"The Predicted result is :  {model_pred} , { msg()}" )
+st.success(f"The Predicted result is :  {model_pred} , {msg}" )
 
 proba = model.predict_proba(input_df)
 failure_prob = float(proba[0][1])
