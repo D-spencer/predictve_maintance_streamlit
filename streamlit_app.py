@@ -40,13 +40,13 @@ with st.sidebar:
             'air_temperature': Air_Temperature,
             'process_temp': Process_Temperature}
     input_df = pd.DataFrame(data, index=[0])
-    input_pred = pd.concat([input_df, X_raw], axis=0)
+    # input_pred = pd.concat([input_df, X_raw], axis=0)
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
   input_df
-  st.write('**Combined penguins data**')
-  input_pred
+  # st.write('**Combined penguins data**')
+  # input_pred
   
 @st.cache_resource
 def load_model():
