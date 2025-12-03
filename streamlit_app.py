@@ -59,9 +59,9 @@ model = load_model()
 model_pred = model.predict(input_df)[0]
 def fail():
   if model_pred == 1:
-    st.write( ' this machine is likely to fail')
+    return ' this machine is likely to fail'
   else : 
-    st.write('This Machine is Okay')
+    return 'This Machine is Okay'
 st.success(f"The Predicted result is :  {model_pred}, {fail()}" )
 
 proba = model.predict_proba(input_df)
