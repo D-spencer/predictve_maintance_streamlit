@@ -25,11 +25,11 @@ with st.expander('Data Visulization'):
 with st.sidebar:
   st.header('Input Features')
   MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
-  Torque =  st.text_input('torque_[nm]',3.8 , 76.6, 39.4)
-  rotational_speed =  st.number_input('rotational_speed_[rpm]',1168, 2886, 2000)
-  tool_wear =  st.number_input('tool_wear_[min]',0, 253, 124)
-  Air_Temperature =  st.number_input('air_temp',295.3, 304.2, 299.71)
-  Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8, 310.76)
+  Torque =  st.text_input('torque_[nm]',3.8 , 76.6)
+  rotational_speed =  st.number_input('rotational_speed_[rpm]',1168, 2886)
+  tool_wear =  st.number_input('tool_wear_[min]',0, 253)
+  Air_Temperature =  st.number_input('air_temp',295.3, 304.2)
+  Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8)
   
   data = {'type': MachineType,
           'torque_[nm]': Torque,
