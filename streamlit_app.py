@@ -23,6 +23,7 @@ with st.expander('Data Visulization'):
   st.bar_chart(df['target'].value_counts()  , x_label='Distribution of Target column')
 
 with st.sidebar:
+  with st.form():
   st.header('Input Features')
   MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
   Torque =  st.number_input('torque_[nm]',3.8 , 76.6)
@@ -30,6 +31,7 @@ with st.sidebar:
   tool_wear =  st.number_input('tool_wear_[min]',0, 253)
   Air_Temperature =  st.number_input('air_temp',295.3, 304.2)
   Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8)
+  submit = st.form_submit_button('Predict')
   
   data = {'type': MachineType,
           'torque_[nm]': Torque,
