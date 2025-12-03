@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 st.title('🤖 Predictive Maintenance APP')
-st.info('This is a machine Learning App')
+st.info('This is a machine Learning App that predict if a machine is likely to fail or not')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
