@@ -23,7 +23,7 @@ with st.expander('Data Visulization'):
   st.bar_chart(df['target'].value_counts()  , x_label='Distribution of Target column')
 
 with st.sidebar:
-  with st.form():
+  with st.form("input value"):
     st.header('Input Features')
     MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
     Torque =  st.number_input('torque_[nm]',3.8 , 76.6)
