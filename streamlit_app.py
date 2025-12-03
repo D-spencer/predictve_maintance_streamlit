@@ -50,22 +50,16 @@ model = joblib.load('predictive_maintance.Pk1')
 st.success(f"The Predicted result is :  {model.predict(input_df)[0]}")
 
 proba = model.predict_proba(input_df)
-# st.info(f"Probability of failure: {proba:.2f}")
-df_prediction_proba = pd.DataFrame(proba)
-df_prediction_proba.rename(columns={0: 'Probability of no failure' ,
-                                    1: 'Probability of failure'} ,
-                           inplace =True)
-st.dataframe(df_prediction_proba)
 failure_prob = float(proba[0][1])
 no_failure_prob = float(proba[0][0])
 
 col1, col2 = st.columns(2)
 with col1: 
-  st.metric('No failure' ,  f"{no_failure_prob:.2%}")
+  st.metric('Probability of No failure' ,  f"{no_failure_prob:.2%}")
   st.progress(no_failure_prob)
 
 with col2: 
-  st.metric('failure',  f"{failure_prob:.2%}")
+  st.metric('Probability of failure',  f"{failure_prob:.2%}")
   st.progress(failure_prob)
 
 
