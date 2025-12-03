@@ -47,8 +47,12 @@ with st.expander('Input features'):
   input_df
   st.write('**Combined penguins data**')
   input_pred
+  
+@st.cache_resource
+def load_model():
+  return joblib.load('predictive_maintance.Pk1')
 
-model = joblib.load('predictive_maintance.Pk1')
+model = load_model()
 st.success(f"The Predicted result is :  {model.predict(input_df)[0]}")
 
 proba = model.predict_proba(input_df)
