@@ -62,11 +62,11 @@ no_failure_prob = float(proba[0][0])
 col1, col2 = st.columns(2)
 with col1: 
   st.metric('No failure' ,  f"{no_failure_prob:.2%}")
-  st.progress(no_failure_proba)
+  st.progress(no_failure_prob)
 
 with col2: 
   st.metric('failure',  f"{failure_prob:.2%}")
-  st.progress(failure_proba)
+  st.progress(failure_prob)
 
 
              
