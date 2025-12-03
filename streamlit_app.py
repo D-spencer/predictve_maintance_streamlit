@@ -24,23 +24,23 @@ with st.expander('Data Visulization'):
 
 with st.sidebar:
   with st.form():
-  st.header('Input Features')
-  MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
-  Torque =  st.number_input('torque_[nm]',3.8 , 76.6)
-  rotational_speed =  st.number_input('rotational_speed_[rpm]',1168, 2886)
-  tool_wear =  st.number_input('tool_wear_[min]',0, 253)
-  Air_Temperature =  st.number_input('air_temp',295.3, 304.2)
-  Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8)
-  submit = st.form_submit_button('Predict')
-  
-  data = {'type': MachineType,
-          'torque_[nm]': Torque,
-          'rotational_speed_[rpm]': rotational_speed,
-          'tool_wear_[min]': tool_wear,
-          'air_temperature': Air_Temperature,
-          'process_temp': Process_Temperature}
-  input_df = pd.DataFrame(data, index=[0])
-  input_pred = pd.concat([input_df, X_raw], axis=0)
+    st.header('Input Features')
+    MachineType = st.selectbox('type' , ('L', 'M' , 'H'))
+    Torque =  st.number_input('torque_[nm]',3.8 , 76.6)
+    rotational_speed =  st.number_input('rotational_speed_[rpm]',1168, 2886)
+    tool_wear =  st.number_input('tool_wear_[min]',0, 253)
+    Air_Temperature =  st.number_input('air_temp',295.3, 304.2)
+    Process_Temperature = st.number_input('process_temperatuew',308.0, 313.8)
+    submit = st.form_submit_button('Predict')
+    
+    data = {'type': MachineType,
+            'torque_[nm]': Torque,
+            'rotational_speed_[rpm]': rotational_speed,
+            'tool_wear_[min]': tool_wear,
+            'air_temperature': Air_Temperature,
+            'process_temp': Process_Temperature}
+    input_df = pd.DataFrame(data, index=[0])
+    input_pred = pd.concat([input_df, X_raw], axis=0)
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
