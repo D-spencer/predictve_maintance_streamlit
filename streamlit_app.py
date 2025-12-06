@@ -81,10 +81,6 @@ with col2:
   st.metric('Probability of failure',  f"{failure_prob:.2%}")
   st.progress(failure_prob)
 
-
-from model import X
-st.write(X)
-
              
 
   
