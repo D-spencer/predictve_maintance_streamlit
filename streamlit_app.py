@@ -82,7 +82,8 @@ with col2:
   st.progress(failure_prob)
 
 
-st.write(X).columns
+from model import X
+st.write(X)
 
              
 
