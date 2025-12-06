@@ -37,14 +37,14 @@ with st.sidebar:
     
     submit = st.form_submit_button('Predict')
     
-     input_df  = pd.Dataframe([{
+   input_df  = pd.Dataframe([{
        'type': MachineType,
         'air_temperature': Air_Temperature,
         'process_temp': Process_Temperature,
         'rotational_speed_[rpm]': rotational_speed,
         'torque_[nm]': Torque,
         'tool_wear_[min]': tool_wear
-     }])
+   }])
     
     # input_pred = pd.concat([input_df, X_raw], axis=0)
 
