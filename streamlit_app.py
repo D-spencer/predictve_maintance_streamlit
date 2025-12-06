@@ -37,7 +37,7 @@ with st.sidebar:
     
     submit = st.form_submit_button('Predict')
     
-     input_df  = pd.Dataframe([{
+   input_df  = pd.Dataframe([{
        'type': MachineType,
         'air_temperature': Air_Temperature,
         'process_temp': Process_Temperature,
