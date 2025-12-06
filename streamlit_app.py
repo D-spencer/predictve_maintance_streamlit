@@ -43,8 +43,7 @@ with st.sidebar:
         'process_temp': Process_Temperature,
         'rotational_speed_[rpm]': rotational_speed,
         'torque_[nm]': Torque,
-        'tool_wear_[min]': tool_wear
-              }])
+        'tool_wear_[min]': tool_wear }])
     
     # input_pred = pd.concat([input_df, X_raw], axis=0)
 
