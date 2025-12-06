@@ -82,6 +82,8 @@ with col2:
   st.progress(failure_prob)
 
 
+st.write(X).columns
+
              
 
   
