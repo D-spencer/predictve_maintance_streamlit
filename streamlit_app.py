@@ -45,7 +45,7 @@ with st.sidebar:
         'torque_[nm]': Torque,
         'tool_wear_[min]': tool_wear
    }
-    input_df = pd.Dataframe(data, index =[0])
+    input_df = pd.DataFrame(data, index =[0])
     # input_pred = pd.concat([input_df, X_raw], axis=0)
 
 with st.expander('Input features'):
