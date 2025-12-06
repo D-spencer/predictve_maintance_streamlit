@@ -54,7 +54,7 @@ with st.expander('Input features'):
   # st.write('**Combined penguins data**')
   # input_pred
   
-@st.cache_resource
+
 def load_model():
   return joblib.load('predictive_maintance.Pk1')
 
